@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Care and cure hospital</title>
+<style>
+.header {
+	padding: 0.5px;
+	background-color: #00b0ff;
+}
+
+p {
+	font-size: 30.5px;
+	color: black;
+}
+body {
+	background-color:white;
+	font-family: "Lato", sans-serif;
+	min-height: 100vh;
+	margin: 0;
+}
+	
+* {
+	box-sizing: border-box;
+}
+
+.box {
+	position: absolute;
+	top: 22%; 
+	left: 60%;
+	translate: transform(-30%, -38%);
+	width: 400px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 5px 10px 18px #888888;
+	background-color:white;
+}
+.box .head
+{
+border-bottom:1px solid #f0f0f0;
+background-color:#00b0ff;
+padding:20px 40px;
+border-radius: 10px 10px  0px 0px;
+}
+.box  .head h2 {
+	marign:0;
+	color:#2f2e41;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.inputfelid {
+	postion: relative;
+	padding:0px 40px;
+}
+
+.box .inputfelid input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	padding: 30px 0 0 0;
+	border-bottom: 1px solid black;
+}
+.box .inputfelid textarea {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	padding: 30px 0 0 0;
+	border-bottom: 1px solid black;
+}
+
+.box .inputfelid input:focus {
+	border-bottom: 2px solid #00b0ff;
+}
+
+.box .inputfelid textarea:focus {
+	border-bottom: 2px solid #00b0ff;
+}
+
+.box .inputfelid .label1 {
+	position: absolute;
+	top: 125px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label1, .box .inputfelid input:valid ~.label1
+	{
+	top: 105px;
+	color: #00b0ff;
+	font-size: 14px;
+}
+
+.box .inputfelid input:focus ~.label2, .box .inputfelid input:valid ~.label2
+	{
+	top: 159px;
+	color:#00b0ff;
+	font-size: 16px;
+}
+
+.label2 {
+	position: absolute;
+	top: 177px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.label3 {
+	position: absolute;
+	top: 229px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label3, .box .inputfelid input:valid ~.label3
+	{
+	top: 210px;
+	color: #00b0ff;
+	font-size: 16px;
+}
+
+.label4 {
+	position: absolute;
+	top: 276px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label4, .box .inputfelid input:valid ~.label4
+	{
+	top: 257px;
+	color: #00b0ff;
+	font-size: 16px;
+}
+
+.label5 {
+	position: absolute;
+	top: 328px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label5, .box .inputfelid input:valid ~.label5
+	{
+	top: 306px;
+	color: #00b0ff;
+	font-size: 16px;
+}
+
+.label6 {
+	position: absolute;
+	top: 379px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label6, .box .inputfelid input:valid ~.label6
+	{
+	top: 355px;
+	color: #00b0ff;
+	font-size: 16px;
+}
+
+.label7 {
+	position: absolute;
+	top: 428px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label7, .box .inputfelid input:valid ~.label7
+	{
+	top: 409px;
+	color: #00b0ff;
+	font-size: 16px;
+}
+
+.label8 {
+	position: absolute;
+	top: 479px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label8, .box .inputfelid input:valid ~.label8
+	{
+	top: 455px;
+	color: #00b0ff;
+	font-size: 16px;
+}
+.label9 {
+	position: absolute;
+	top: 528px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label9, .box .inputfelid input:valid ~.label9
+	{
+	top: 505px;
+	color: #00b0ff;
+	font-size: 16px;
+}
+.label10 {
+	position: absolute;
+	top: 575px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label10, .box .inputfelid input:valid ~.label10
+	{
+	top: 555px;
+	color: #00b0ff;
+	font-size: 16px;
+}
+.label11 {
+	position: absolute;
+	top: 625px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label11, .box .inputfelid input:valid ~.label11
+	{
+	top: 605px;
+	color: #00b0ff;
+	font-size: 16px;
+}
+.label12 {
+	position: absolute;
+	top: 675px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+.box .inputfelid textarea:focus ~.label12, .box .inputfelid textarea:valid ~.label12
+	{
+	top: 655px;
+	color: #00b0ff;
+	font-size: 16px;
+}
+.label13 {
+	position: absolute;
+	top: 769px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	pointer-events: none;
+	align-contents:center;
+	justify-content:center;
+	transition: .5s;
+}
+button{
+	color: white;
+	border: none;
+	background: #00b0ff;
+	padding: 10px 30px;
+	border-radius: 5px;
+	width:90%;
+	text-align:center;
+}
+
+input[type=text] {
+	background: transparent;
+	border: none;
+	color: none;
+	padding: 4px;
+	width: 210px;
+}
+
+input[type=number] {
+	background: transparent;
+	border: none;
+	color: none;
+	padding: 4px;
+	width: 210px;
+}
+input[type=password] {
+	background: transparent;
+	border: none;
+	color: none;
+	padding: 4px;
+	width: 210px;
+}
+input[type=reset] {
+	background: transparent;
+	border: none;
+	color: none;
+	padding: 4px;
+	width: 200px;
+}
+textarea {
+	background: transparent;
+	border: none;
+	border-bottom:1px black;
+	color: none;
+	padding: 4px;
+	width: 210px;
+}
+input[type=file] {
+	background: transparent;
+	border: none;
+	color: none;
+	padding: 4px;
+	width: 210px;
+}
+
+.no-outline:focus {
+	outline: none;
+	border-bottom: 1.9px solid red;
+}
+.footer {
+  position:absolute;
+  top:1200px;
+  left: 0;
+  bottom:0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+}
+.image img {
+	position: absolute;
+	top: 38%;
+	left: 8%;
+	width: 600px;
+	height: 760px;
+}
+</style>
+<script type="text/javascript">
+function check()
+{   
+	var name=document.forms["reg_form"]["name"].value;
+    if(name=="")
+    {
+         alert("please provide your name")
+         return false;
+    }
+    var date=document.forms["reg_form"]["dob"].value;
+    var dob=date.length;
+    if(dob=="")
+    {
+         alert("please provide your date of birth")
+         return false;
+    }
+    if(dob>10 || dob<10)
+    {
+         alert("please provide correct date of birth")
+         return false;
+    }
+    var name=document.forms["reg_form"]["age"].value;
+    if(name=="")
+    {
+         alert("please provide your age")
+         return false;
+    }
+    var gen=document.forms["reg_form"]["gender"].value;
+    if(gen=="")
+    	{
+    	alert("Please provide your gender")
+    	return false;
+    	}
+    var b=document.forms["reg_form"]["blood"].value;
+     positive=b.lastIndexOf("v");
+     if(b=="")
+	 {
+	 alert("Please enter the blood group ");
+	 return false;
+	 }
+     if(positive < 1)
+    	 {
+    	 alert("Please enter the blood group with +ve or -ve ");
+    	 return false;
+    	 }
+    var mob=document.forms["reg_form"]["phn"].value;
+    mi=mob.length;
+    if(mob=="")
+    	{
+    	alert("Please provide your phone number")
+    	}
+    if(isNaN(mob))
+    {
+    alert("please enter the phone number properly")
+    return flase;
+    }
+    if(mi>10 || mi<10)
+    {
+         alert("please provide correct mobile number")
+         return false;
+    }
+    var email = document.forms["reg_form"]["emailid"].value;
+    atpos = email.indexOf("@");
+    dotpos = email.lastIndexOf(".");
+    if (email == "")
+    {
+        alert("Please provoide your email id");
+        return false;
+    }
+    if( atpos < 1 || ( dotpos - atpos < 2 ))
+    {
+        alert("Please enter correct email ID")
+        return false;
+    }
+    var ex=document.forms["reg_form"]["exper"].value;
+    if(ex=="")
+    	{
+    	alert("Please enter your experience")
+    	return false;
+    	}
+    var dept=document.forms["reg_form"]["spl"].value;
+    if(dept=="")
+    	{
+    	alert("Please enter your specilaization")
+    	return false;
+    	}
+ var x=document.forms["reg_form"]["pass"].value;
+ var x1=document.forms["reg_form"]["pass1"].value;
+ if(x!=x1)
+	 {
+	  alert("PASSWORD DOES NOT MATCH :(")
+	  return false;
+	 }
+ else
+ {
+      return true;
+ }
+}
+</script>
+</head>
+<body>
+<div class="header">
+    <p align="center">
+        <img src="medical.png" width="50" height="50" align="left"/>
+        <b> CARE AND CURE HOSPITAL</b>
+        <img src="medical.png" width="50" height="50" align="right"/>
+    </p>
+</div>
+<div class="image">
+		<img src="reg.svg"></img>
+	</div>
+<div class="box">
+	<div class="head"><h2>REGISTRATION FORM</h2></div>
+    <form id="reg_form" action="Docvalidate" method="post">
+          <div class="inputfelid">
+		       <input type="text" name="name" class="no-outline" required />
+		       <label class="label1">Name<b style="color: red;">*</b></label>
+         </div>
+         <div class="inputfelid">
+		      <input type="text" name="dob" class="no-outline" required/>
+		      <label class="label2">Date of birth<b style="color: red;">*</b></label>
+         </div>
+         <div class="inputfelid">
+		      <input type="number" name="age" class="no-outline" required/>
+		      <label class="label3">Age<b style="color: red;">*</b></label>
+         </div>
+         <div class="inputfelid">
+		      <input type="text" name="gender" class="no-outline" required/>
+		      <label class="label4">Gender<b style="color: red;">*</b></label>
+         </div>
+         <div class="inputfelid">
+		      <input type="text" name="blood" class="no-outline" required/>
+		      <label class="label5">Blood group<b style="color: red;">*</b></label>
+         </div>
+         <div class="inputfelid">
+		      <input type="number" name="phn" class="no-outline" required/>
+		      <label class="label6">Phone number<b style="color: red;">*</b></label>
+        </div>
+        <div class="inputfelid">
+		     <input type="text" name="emailid" class="no-outline" required/>
+		     <label class="label7">Email id<b style="color: red;">*</b></label>
+        </div>       
+        <div class="inputfelid">
+		     <input type="text" name="exper" class="no-outline" required/>
+		     <label class="label8">Experience<b style="color: red;">*</b></label>
+        </div>
+        <div class="inputfelid">
+		     <input type="text" name="spl" class="no-outline" required/>
+		     <label class="label9">Department<b style="color: red;">*</b></label>
+        </div>
+        <div class="inputfelid">
+		     <input type="password" name="pass" class="no-outline" required/>
+		     <label class="label10">Password<b style="color: red;">*</b></label>
+        </div>
+        <div class="inputfelid">
+		     <input type="password" name="pass1" class="no-outline" required/>
+		     <label class="label11">Retype password<b style="color: red;">*</b></label>
+        </div>
+        <div class="inputfelid">
+		     <textarea name="address" class="no-outline" rows="4" cols="40" required></textarea>
+		     <label class="label12">Address<b style="color: red;">*</b></label>
+        </div>
+       <br>
+       <div class="inputfelid">
+            <center>
+                    <button type="submit" value="Submit" onclick="return check()">Submit</button>
+            </center>
+       </div>
+       <div class="inputfelid">
+            <center>
+                    <input type="reset"/>
+            </center>
+       </div>
+       <br>
+       <br>
+    </form>
+</div>
+ <div class="footer">
+    @care and cure hospital
+ </div>
+</body>
+</html>

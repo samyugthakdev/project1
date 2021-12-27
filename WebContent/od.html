@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Organ donation</title>
+<head>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+.header {
+	padding: 0.5px;
+	background-color: skylight;
+	border-radius: 6px;
+}
+
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: red;
+	color: black;
+}
+
+body {
+	background-color: #f5f5f5;
+	font-family: "Lato", sans-serif;
+	min-height: 100vh;
+	margin: 0;
+}
+
+p {
+	font-size: 30.5px;
+	color: black;
+	top-marign: 0px;
+}
+
+.active {
+	background-color: #4CAF50;
+	font-color: black;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: #333;
+	font-family: inherit;
+	/* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: red;
+	color: black;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+ul.a {
+  list-style-type: square;
+}
+.box{
+ box-sizing:border-box;
+       border-collapse: collapse;
+       border:1.5px solid black;
+       padding:30px;
+       background-color:violet;
+       opacity:0.5;
+}
+.box a
+{
+position:absolute;
+top:840px;
+left:50%;
+text-decoration:none;
+}
+</style>
+</head>
+<body>
+	<div class="header">
+		<p align="center">
+			<img src="medical.png" width="50" height="50" align="left" /> <b>
+				CARE AND CURE HOSPITAL</b> <img src="medical.png" width="50" height="50"
+				align="right" />
+		</p>
+	</div>
+	<div class="topnav">
+		<a href="home.html"><i class="fa fa-home"> Home</i></a> <a
+			href="room.html"><i class="fa fa-bed"> Room facility</i></a> <a
+			href="doctor.html"><i class="fa fa-stethoscope"> Doctors</i></a> <a
+			href="ambulance.html"><i class="fa fa-ambulance"> Ambulance
+				facility</i></a> <a href="lab.html"><i class="fa fa-flask">
+				Laboratorys</i></a>
+		<div class="dropdown">
+			<button class="dropbtn" class="active">
+				Donations <i class="fa  fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="bd.html"> Blood donation</a> <a href="od.html">Organ
+					donation</a> <a href="fd.html">Finding donors</a>
+			</div>
+		</div>
+		<a href="feedback.html"><i class="fa fa-wpforms"> Patients
+				Feedback</i></a> <a  href="contact.html"><i
+			class="fa fa-phone"> Contact Us</i></a>
+	</div>
+
+	<font size="4">
+		<div class="myDiv">
+			<h2>Overview</h2>
+			<div>
+				<ul class="a">
+					<li>Organ donation is an extremely noble and honorable act
+						that benefits society in many ways.</li>
+					<li>It involves removing organs or tissues from usually dead
+						body and transplanting it to a different body.
+					</li>
+					<li>Organ donation can be either done by a dead person,
+						provided his family members give consent.</li>
+					<li>Organ donation can also improve the quality of life of
+						many people.</li>
+				</ul>
+			</div>
+			<h2>Importance of organ donation</h2>
+			<div>
+			<ul>
+			<li>Donation is the giving of an organ and tissue to help someone that needs a transplant.</li>
+			<li>Transplants can save or transform the life of a person.</li>
+			<li>One organ and tissue donor can help transform the lives of more than 10 people.</li>
+			<li>This relies on donors and their families agreeing to donate their organ and tissue after death.</li>
+			</ul></div>
+
+			<h3>The 5 Step Process From Organ Donation To Transplant Stage
+				In India</h3>
+			1.How to be a Donor?<br> 2.Process to Declare Brain Death<br>
+			3.Post declaration of Brain Death<br> 4.Hunt for the Recipient<br>
+			5.How Is Recipient Shortlisted?<br>
+
+			<h2>How is organ donation done?</h2>
+			It involves the removal of an organ or tissue from one person (the
+			donor) for transplant into another person (the recipient). Both
+			donation and transplantation happens in a surgical procedure by
+			highly skilled surgeons and health professionals, much like any other
+			surgical procedure.
+
+		</div>
+		<form>
+			<br> <input type="checkbox"  id="tick" onchange="document.getElementById('terms').disabled = !this.checked;" />I
+			have gone through the about statements and ready to be a good donor.<br>
+			<br> <div class="box"><a href="odform.html" id="terms" disabled>Next</a></div>
+		</form>
+</body>
+</html>

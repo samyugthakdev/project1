@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Care and cure hospital</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.header {
+	padding: 0.5px;
+	top-marign: 0px;
+	background-color: #00b0ff;
+	border-radius: 6px;
+	marign-top: 0px;
+}
+
+p {
+	font-size: 30.5px;
+	color: black;
+}
+
+input[type=text] {
+	background: transparent;
+	border: none;
+	border-bottom: 1.5px solid black;
+	color: none;
+	padding: 4px;
+	width: 210px;
+}
+
+input[type=password] {
+	background: transparent;
+	border: none;
+	border-bottom: 1.5px solid black;
+	color: none;
+	padding: 4px;
+	width: 210px;
+}
+
+.no-outline:focus {
+	outline: none;
+	border-bottom: 1.9px solid red;
+}
+
+.box {
+	position: absolute;
+	top: 30%;
+	left: 60%;
+	translate: transform(-30%, -38%);
+	width: 400px;
+	padding: 40px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.box h2 {
+	marign: 0 0 30px;
+	padding: 0;
+	color: black;
+	text-align: center;
+}
+
+.inputfelid {
+	postion: relative;
+}
+
+.box .inputfelid input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: blue;
+	padding: 30px 0 0 0;
+	border-bottom: 1px solid #00b0ff;
+}
+
+.box .inputfelid .label1 {
+	position: absolute;
+	top: 120px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label1, .box .inputfelid input:valid ~.label1
+	{
+	top: 105px;
+	color: #00b0ff;
+	font-size: 14px;
+}
+
+.box .inputfelid input:focus ~.label2, .box .inputfelid input:valid ~.label2
+	{
+	top: 150px;
+	color: #00b0ff;
+	font-size: 14px;
+}
+
+.label3 {
+	position: absolute;
+	top: 220px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+.box .inputfelid input:focus ~.label3, .box .inputfelid input:valid ~.label3
+	{
+	top: 200px;
+	color: #00b0ff;
+	font-size: 14px;
+}
+
+.label2 {
+	position: absolute;
+	top: 170px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.showpass {
+	color: black;
+}
+
+input[type="submit"] {
+	color: black;
+	border: none;
+	background: #00b0ff;
+	padding: 10px 30px;
+}
+
+.val {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: #00b0ff;
+}
+
+.img img {
+	position: absolute;
+	top: 140px;
+	left: 10px;
+	width: 600px;
+}
+</style>
+<script type="text/javascript">
+	function show() {
+		var x = document.getElementById("pass");
+		if (x.type == "password") {
+			x.type = "text";
+		} else {
+			x.type = "password";
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="header">
+		<p align="center">
+			<img src="medical.png" width="50" height="50" align="left" /> <b>
+				CARE AND CURE HOSPITAL</b> <img src="medical.png" width="50" height="50"
+				align="right" />
+		</p>
+	</div>
+	<div class="img">
+		<img src="login.svg.svg"></img>
+	</div>
+	<br />
+	<br />
+	<div class="box">
+		<h2>Login</h2>
+		<form action="Valid" action="Post">
+			<div class="inputfelid">
+				<input type="text" name=uname class="no-outline" required> <label
+					class="label1">User name</label>
+			</div>
+			<div class="inputfelid">
+				<input type="text" name=dept class="no-outline" required> <label
+					class="label2">Department</label>
+			</div>
+			<div class="inputfelid">
+				<input type="password" name=pass id="pass" class="no-outline"
+					required> <label class="label3">Password</label>
+			</div>
+			<br> <input type="checkbox" onclick="show()"><i
+				class="showpass">Show password </i> <br>
+			<br> <input type="submit" value="Login" class="no-outline"><br>
+			<br>
+			<div class="val">
+				Not registered?<a href="signup.html">Register now</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

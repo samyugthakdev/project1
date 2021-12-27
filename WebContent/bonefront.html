@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Care and cure hospitality</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+.header {
+	padding: 0.5px;
+	background-color: white;
+}
+
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: red;
+	color: black;
+}
+
+body {
+	background-color: white;
+	font-family: "Lato", sans-serif;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.no-outline:focus {
+	outline: none;
+	border-bottom: 1.9px solid red;
+}
+
+p {
+	font-size: 30.5px;
+	color: black;
+	top-marign: 0px;
+}
+
+.active {
+	background-color: #4CAF50;
+	color: black;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: #333;
+	font-family: inherit;
+	/* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: red;
+	color: black;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+* {
+	box-sizing: border-box;
+}
+
+.box {
+	position: absolute;
+	top: 30%; 
+	left: 60%;
+	translate: transform(-30%, -38%);
+	width: 400px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 5px 10px 18px #888888;
+	background-color:white;
+}
+.box .head
+{
+border-bottom:1px solid #f0f0f0;
+background-color:black;
+padding:20px 40px;
+border-radius: 10px 10px  0px 0px;
+}
+.box  .head h2 {
+	marign:0;
+	color:white;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.inputfelid {
+	postion: relative;
+	padding:0px 40px;
+}
+
+.box .inputfelid input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	padding: 30px 0 0 0;
+	border-bottom: 1px solid black;
+}
+
+.box .inputfelid input:focus {
+	border-bottom: 2px solid black;
+}
+
+.box .inputfelid .label1 {
+	position: absolute;
+	top: 125px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label1, .box .inputfelid input:valid ~.label1
+	{
+	top: 105px;
+	color: #f5ae00;
+	font-size: 14px;
+}
+
+.box .inputfelid input:focus ~.label2, .box .inputfelid input:valid ~.label2
+	{
+	top: 159px;
+	color: #f5ae00;
+	font-size: 16px;
+}
+
+.label2 {
+	position: absolute;
+	top: 177px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.label3 {
+	position: absolute;
+	top: 229px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label3, .box .inputfelid input:valid ~.label3
+	{
+	top: 210px;
+	color: #f5ae00;
+	font-size: 16px;
+}
+
+.label4 {
+	position: absolute;
+	top: 276px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label4, .box .inputfelid input:valid ~.label4
+	{
+	top: 257px;
+	color: #f5ae00;
+	font-size: 16px;
+}
+
+.label5 {
+	position: absolute;
+	top: 328px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label5, .box .inputfelid input:valid ~.label5
+	{
+	top: 306px;
+	color: #f5ae00;
+	font-size: 16px;
+}
+
+.label6 {
+	position: absolute;
+	top: 379px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label6, .box .inputfelid input:valid ~.label6
+	{
+	top: 355px;
+	color: #f5ae00;
+	font-size: 16px;
+}
+
+.label7 {
+	position: absolute;
+	top: 428px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label7, .box .inputfelid input:valid ~.label7
+	{
+	top: 409px;
+	color: #f5ae00;
+	font-size: 16px;
+}
+
+.label8 {
+	position: absolute;
+	top: 479px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label8, .box .inputfelid input:valid ~.label8
+	{
+	top: 450px;
+	color: #f5ae00;
+	font-size: 16px;
+}
+.label9 {
+	position: absolute;
+	top: 528px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label9, .box .inputfelid input:valid ~.label9
+	{
+	top: 500px;
+	color: #f5ae00;
+	font-size: 16px;
+}
+.label10 {
+	position: absolute;
+	top: 575px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label10, .box .inputfelid input:valid ~.label10
+	{
+	top: 550px;
+	color: #f5ae00;
+	font-size: 16px;
+}
+.label11 {
+	position: absolute;
+	top: 625px;
+	left: 40px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .inputfelid input:focus ~.label11, .box .inputfelid input:valid ~.label11
+	{
+	top: 605px;
+	color: #f5ae00;
+	font-size: 16px;
+}
+.b1 {
+	background: black;
+	padding: 10px 30px;
+	border-radius: 5px;
+	width:90%;
+	text-align:center;
+}
+
+.image img {
+	position: absolute;
+	top: 50%;
+	left: 8%;
+	width: 600px;
+	height: 560px;
+}
+input[type=text] {
+	background: transparent;
+	border: none;
+	color: none;
+	padding: 4px;
+	width: 210px;
+}
+
+input[type=number] {
+	background: transparent;
+	border: none;
+	color: none;
+	padding: 4px;
+	width: 210px;
+}
+
+.no-outline:focus {
+	outline: none;
+	border-bottom: 1.9px solid red;
+}
+.footer {
+  position:absolute;
+  top:1000px;
+  left: 0;
+  bottom:0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+}
+.invalid:focus
+{
+border:none;
+}
+</style>
+<script language="JavaScript1.5">
+        function check()
+        {
+           var pname= document.forms["appoinment_form"]["name"].value;
+           if(pname=="")
+           {
+           alert("please enter the your name")
+           return false;
+           }
+           var date=document.forms["appoinment_form"]["dob"].value;
+           var dob=date.length;
+           if(dob>10 || dob<10)
+           {
+                alert("please provide correct date of birth")
+                return false;
+           }
+           var b=appoinment_form.blood.value;
+            s= b.lastIndexOf("v");
+            if ( s < 1)
+           {
+                 alert("Please enter the blood group with +ve or -ve");
+                 return false;
+           }
+           var mob=document.forms["appoinment_form"]["phn"].value;
+           mi=mob.length;
+           if(isNaN(mob))
+           {
+           alert("please enter the phone number properly");
+           return flase;
+           }
+           if(mi>10 || mi<10)
+           {
+                alert("please provide correct mobile number");
+                return false;
+           }
+           var email = document.forms["appoinment_form"]["emailid"].value;
+           atpos = email.indexOf("@");
+           dotpos = email.lastIndexOf(".");
+           if (email == "")
+           {
+               alert("Please enter email ID")
+               return false;
+           }
+           if( atpos < 1 || ( dotpos - atpos < 2 ))
+           {
+               alert("Please enter correct email ID")
+               return false;
+           }
+            var b=appoinment_form.blood.value;
+            s= b.lastIndexOf("v");
+            if ( s < 1)
+           {
+                 alert("Please enter the blood group with +ve or -ve");
+                 return false;
+           }
+            var door=appoinment_form.door_num.value;
+            if(door=="")
+            {
+            alert("please enter the door number")
+            return false;
+            }
+            var street=appoinment_form.street_name.value;
+            if(street=="")
+            {
+            alert("please enter the street name")
+            return false;
+            }
+            var city=appoinment_form.city.value;
+            if(city=="")
+            {
+            alert("please enter the city")
+            return false;
+            }
+            var dis=appoinment_form.district.value;
+            if(dis=="")
+            {
+            alert("please enter the district")
+            return false;
+            }
+            var state=appoinment_form.state.value;
+            if(state=="")
+            {
+            alert("please enter the state")
+            return false;
+            }
+           else
+           {
+                return true;
+           }
+        }
+    </script>
+</head>
+<body>
+	<div class="header">
+		<p align="center">
+			<img src="medical.png" width="50" height="50" align="left" /> <b>
+				CARE AND CURE HOSPITAL</b> <img src="medical.png" width="50" height="50"
+				align="right" />
+		</p>
+	</div>
+	<div class="topnav">
+		<a href="home.html"><i class="fa fa-home"> Home</i></a> <a
+			href="room.html"><i class="fa fa-bed"> Room facility</i></a> <a
+			href="doctor.html"><i class="fa fa-stethoscope"> Doctors</i></a> <a
+			href="ambulance.html"><i class="fa fa-ambulance"> Ambulance
+				facility</i></a> <a href="lab.html"><i class="fa fa-flask">
+				Laboratorys</i></a>
+		<div class="dropdown">
+			<button class="dropbtn" class="active">
+				Donations <i class="fa  fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="bd.html"> Blood donation</a> <a href="od.html">Organ
+					donation</a>
+			</div>
+		</div>
+		<a href="feedback.html"><i class="fa fa-wpforms"> Patients
+				Feedback</i></a> <a href="contact.html"><i class="fa fa-phone">
+				Contact Us</i></a>
+	</div>
+	<br>
+		<div class="image">
+		<img src="app.svg"></img>
+	</div>
+	<div class="box">
+	<div class="head"><h2>Appointment form</h2></div>
+	<form id="appoinment_form" action="Bonevalid" method="post">
+	<div class="inputfelid">
+		<input type="text" name="name" class="no-outline" required/>
+		<label class="label1">Name<b style="color: red;">*</b></label>
+    </div>
+    <div class="inputfelid">
+		<input type="text" name="gender" class="no-outline" required/>
+		<label class="label2">Gender<b style="color: red;">*</b></label>
+    </div>
+    <div class="inputfelid">
+		<input type="number" name="age" class="no-outline" required/>
+		<label class="label3">Age<b style="color: red;">*</b></label>
+    </div>
+    <div class="inputfelid">
+		<input type="text" name="dob" class="no-outline" required/>
+		<label class="label4">Date of birth<b style="color: red;">*</b></label>
+    </div>
+    <div class="inputfelid">
+		<input type="number" name="phn_num" class="no-outline" required/>
+		<label class="label5">Phone number<b style="color: red;">*</b></label>
+    </div>
+    <div class="inputfelid">
+		<input type="text" name="emailid" class="no-outline" required/>
+		<label class="label6">Email id<b style="color: red;">*</b></label>
+    </div>
+    <div class="inputfelid">
+		<input type="text" name="door_num" class="no-outline" required/>
+		<label class="label7">Door number<b style="color: red;">*</b></label>
+    </div>
+    <div class="inputfelid">
+		<input type="text" name="street_name" class="no-outline" required/>
+		<label class="label8">Street<b style="color: red;">*</b></label>
+    </div>
+    
+    <div class="inputfelid">
+		<input type="text" name="city" class="no-outline" required/>
+		<label class="label9">City<b style="color: red;">*</b></label>
+    </div>
+     <div class="inputfelid">
+		<input type="text" name="district" class="no-outline" required/>
+		<label class="label10">District<b style="color: red;">*</b></label>
+    </div>
+    <div class="inputfelid">
+		<input type="text" name="state" class="no-outline" required/>
+		<label class="label11">State<b style="color: red;">*</b></label>
+    </div>
+    <br><br>
+    <div class="inputfelid">
+    <center ><button class="b1" style="color:white;" type="submit" value="Submit" onclick="return check()" >Submit</button>
+    </center>
+    </div>
+    <br>
+    </form>
+    </div><br>
+    <br>
+    <div class="footer">
+    @care and cure hospital
+    </div>
+</body>
+</html>

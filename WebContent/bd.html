@@ -1,0 +1,202 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BLOOD DONATION </title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+ .header
+       {
+        padding:0.5px;
+        background-color:skyblue;
+       }
+       .topnav
+       {
+       position:static;
+        background-color: #333;
+        overflow: hidden;
+       }
+       .topnav a
+       {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        .topnav a:hover
+        {
+        background-color:red;
+        color: black;
+        }
+         body
+       {
+       background-color:#f5f5f5;
+       font-family: "Lato", sans-serif;
+       min-height: 100vh;
+	   margin: 0;
+       }
+        p
+        {
+       font-size:30.5px;
+       color:black;
+       top-marign:0px;
+       }
+        .active
+       {
+       background-color:#4CAF50;
+       font-color:black;
+       }
+       .dropdown
+        {
+        float: left;
+        overflow: hidden;
+        }
+        .dropdown .dropbtn {
+          font-size: 16px;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color:#333;
+          font-family: inherit; /* Important for vertical align on mobile phones */
+          margin: 0; /* Important for vertical align on mobile phones */
+         }
+         .navbar a:hover, .dropdown:hover .dropbtn 
+          {
+           background-color:red;
+           color: black;
+          }
+          .dropdown-content {
+             display: none;
+             position: absolute;
+             background-color: #f9f9f9;
+             min-width: 160px;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+             z-index: 1;
+          }
+         .dropdown-content a {
+         float: none;
+         color: black;
+         padding: 12px 16px;
+  		 text-decoration: none;
+         display: block;
+         text-align: left;
+         }
+        .dropdown-content a:hover {
+         background-color: #ddd;
+         }
+         .dropdown:hover .dropdown-content 
+        {
+          display: block;
+        }
+        table
+       {
+       postion:static;
+       box-sizing:border-box;
+       border-collapse: collapse;
+       border:1.5px solid black;
+       border-radius: 4px;
+       background-color:#ffff99;
+       opacity:0.8;
+       }
+       td
+       {
+       padding:8px 12px 8px 12px;
+       }
+       a:hover
+       {
+        text-decoration-line:underline;
+        text-decoration-style:double;
+       }
+       .para {
+	padding: 5px 20px;
+	color: red;
+	text-decoration:underline;
+}
+
+.para1 {
+	padding: 10px 40px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <p align="center">
+        <img src="medical.png" width="50" height="50" align="left"/>
+        <b> CARE AND CURE HOSPITAL</b>
+        <img src="medical.png" width="50" height="50" align="right"/>
+    </p>
+</div>
+<div class="topnav">
+		<a href="home.html"><i class="fa fa-home"> Home</i></a> <a
+			 href="room.html"><i class="fa fa-bed"> Room
+				facility</i></a> <a href="doctor.html"><i class="fa fa-stethoscope">
+				Doctors</i></a> <a href="ambulance.html"><i class="fa fa-ambulance">
+				Ambulance facility</i></a> <a href="lab.html"><i class="fa fa-flask">
+				Laboratorys</i></a>
+		<div class="dropdown">
+			<button class="dropbtn">
+				Donations <i class="fa  fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="bd.html"> Blood donation</a> <a href="od.html">Organ
+					donation</a> 
+			</div>
+		</div>
+		<a href="feedback.html"><i class="fa fa-wpforms"> Patients Feedback</i></a>
+		<a href="contact.html"><i class="fa fa-phone"> Contact Us</i></a>
+	</div>
+<font color="brown" align="center"><h1>BLOOD DONATION</h1></font>
+<font size="4">
+
+<div class="para">Overview:</div>
+<div class="para1">Blood donation is all about gifting life to other people.
+In addition blood donation makes the work of blood banks easier.<br><br><q style="color:"><i>BRING A LIFE BACK TO POWER </i></q><br><br>
+The blood you donate gives someone another chance of life.Give the gift of life.</div>
+
+<div class="para">Benefits:</div>
+<div class="para1">Donating blood has benefits for your emotional and physical health.<br>
+It may also help you to reduce stress, help rid of negative feelings, reduce calories etc.<br>
+It gives you a sense of pride. It Preserve cardio-vascular health.It reduce the risk cancer.
+</div>
+<div class="para">Criteria for donation:</div>
+<div class="para1">
+<ol type="I">
+    <li>The donor must be fit and healthy, and should not be suffering from transmittable diseases.</li>
+    <li>The donor must be 18-65 years old and should weigh a minimum of 50 kg.</li>
+    <li>Hemoglobin level should be minimum of 12.5 g/dL.</li>
+    <li>Body temperature should be normal, with an oral temperature not exceeding 37.5 °C.</li>
+</ol>
+</div>
+
+<div class="para">Ineligibility criteria:</div>
+<div class="para1">
+<ol type="I">
+    <li>Have ever had a positive test for the AIDS virus.</li>
+    <li>Had a tattoo in the past 3 months or received a blood transfusion in the past 3 months.</li>
+    <li>Individuals who have had fits, tuberculosis,allergic disorders in the past.</li>
+</ol>
+</div>
+</font>
+<form >
+<table align="center">
+<tr>
+<td>
+  <input type="checkbox"  id="tick" onchange="document.getElementById('terms').disabled = !this.checked;" />
+  <td>
+      <div> I agree to the all the terms & conditions that are listed above</div>
+  </td>
+ </td>
+<td>   </td>
+<td></td>
+     <td align="right">
+          <a href="bdform.html" id="terms" disabled>Next</a>
+     </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
